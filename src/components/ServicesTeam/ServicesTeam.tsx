@@ -54,6 +54,44 @@ const chargingSolutionsData = [
   },
 ]
 
+
+
+const featuresData = [
+  {
+    title: "VOLTIE FULL SOLUTION",
+    description:
+      "VOLTIE Provides Hardware @ no cost",
+      des2:"VOLTIE certiﬁed installer manages installation, Project Management and Service labor. (Excludes CD’s, CM & PM)",
+      des3:"DEVELOPER Provides Electric to EV Locations ",
+      des4:"Developer pays yearly Subscription Fee ",
+      reve:"90/10 Revenue Split VoltiE/Developer",
+    id: 2011,
+  },
+  {
+    title: "SPLIT REVENUE SHARE",
+    description:
+      "VOLTIE Provides Hardware @ 50% discount VOLTIE certiﬁed installer manages installation, Project Management and Service ",
+      des2:"DEVELOPER Provides Electric to EV",
+      des3:"Locations and all required infrastructure by MEP",
+      des4:"DEVELOPER pays yearly Subscription Fee ",
+      
+      reve:"50/50 Revenue Split VoltiE/Developer",
+    id: 2012,
+  },
+  {
+    title: "DEVELOPER OWNED SHARE",
+    description:
+      "VOLTIE Provides Hardware @ MSRP VOLTIE certiﬁed installer manages installation, Project Management and Service.      ",
+      des2:"DEVELOPER Provides Electric to EV",
+      des3:"Locations and all required infrastructure by MEP",
+      des4:"DEVELOPER pays yearly Subscription Fee ",
+      
+      reve:"10/90 Revenue Split VoltiE/Developer",
+    id: 2013,
+  },
+ 
+];
+
 const OurServicesTeam = () => {
   const sliderRef = useRef<Slider>();
   const play = () => {
@@ -119,7 +157,7 @@ const OurServicesTeam = () => {
   return (
     <section className='relative h-full w-full overflow-hidden'>  
     <Image src={blackbg} layout='fill' objectFit='cover' alt='slider-image-first'/>  
-            <div className='h-[100vh] w-full'>
+            <div className='h-[130vh] w-full'>
        
             <div className='absolute z-10 text-white w-full h-full '>
               <div className='gap-y-5'>
@@ -144,8 +182,8 @@ const OurServicesTeam = () => {
                 />
            </div>
          </div>
-            <div className='pt-10 h-full relative'>
-         <Slider
+            {/* <div className='pt-10 h-full relative'> */}
+         {/* <Slider
             {...settings}
           //    ref={sliderRef}
           >
@@ -155,15 +193,59 @@ const OurServicesTeam = () => {
                   <div className='flex flex-col justify-center items-center gap-y-2 w-full'>
                     <div className=''>
                       <Image src={sliderData.image} alt='voltie charging solutions' objectFit='contain' className='w-[200px] h-[17rem]' />
-                      {/* <Image className='absolute top-[10%] left-[28%] w-[98px]' src={voltieSolutionImagePlaceholder} alt='voltie' /> */}
+                      <Image className='absolute top-[10%] left-[28%] w-[98px]' src={voltieSolutionImagePlaceholder} alt='voltie' />
                     </div>
                     <p>{sliderData?.title}</p>
                   </div>
                 </div>
               ))
             }
-          </Slider>
+          </Slider> */}
+
+<div className=" z-10 text-white w-full h-full   ">
+          <div className=" p-12 flex-col gap-y-8 h-full">
+            <div className="flex gap-y-10 justify-center w-full">
+              <Heading name="Revenue Sharing Options" />
+            </div>
+            <div className="w-[100%] mt-4 pt-2 flex flex-wrap gap-4   justify-center">
+              {featuresData.map((slideData, index) => (
+                <div className="" key={slideData.id}>
+                  <div
+                    className="max-w-[300px]   min-h-[175px] shadow-lg rounded-lg  sm:p-6 overflow-h idden   gap-y-4 flex flex-col"
+                 
+                  >
+                    <div className="flex gap-3 items-center  mb-2">
+                      {/* <span>✅</span> */}
+                      {/* <div className=" text-center"> */}
+                        <h2 className="mb-2 text-lg uppercase font-bold text-white">
+                          {slideData.title}
+                        </h2>
+                      {/* </div> */}
+                    </div>
+                    <p className="mb-2 text-white   text-sm">
+                      {slideData.description}
+                    </p>
+                    <p className="mb-2 text-white   text-sm">
+                      {slideData.des2}
+                    </p>
+                    <p className="mb-2 text-white   text-sm">
+                      {slideData.des3}
+                    </p>
+                    <p className="mb-2 text-white   text-sm">
+                      {slideData.des4}
+                    </p>
+                    <div className='  flex gap-5'>
+                      <Image src={require('../../assets/images/vecter.png')} className=' w-9' alt='' />
+                      <span className=' text-lg text-sky-500 font-semibold'>  {slideData.reve}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
+        </div>
+
+          {/* </div> */}
           </div>
        
 
