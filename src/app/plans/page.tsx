@@ -13,13 +13,16 @@ const page = () => {
   return (
     <div>
       <PlanA />
-      <PlanB />
-      <PlanC />
-      <PlanD />
+      {/* <PlanB /> */}
+      {/* <PlanC /> */}
+      {/* <PlanD /> */}
       {/* <PlanE /> */}
       {/* <PlanF /> */}
       {/* <PlanE /> */}
       {/* <OurPartners /> */}
+
+
+
       <OurServicesTeam />
     </div>
   );
