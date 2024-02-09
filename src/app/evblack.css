@@ -1,0 +1,15 @@
+/* EVChargingCalculator.css */
+.calculator-content {
+    background: rgba( 13, 13, 13, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.5px );
+    -webkit-backdrop-filter: blur( 11.5px );
+    border-radius: 10px;
+  }
+  
+  /* Other styles for your calculator components */
+  
+  .glassmorphism:hover {
+    backdrop-filter: blur(12px); /* Enhance the effect on hover if desired */
+  }
+  
