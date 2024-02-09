@@ -18,7 +18,7 @@ const Power = () => {
     <div className='absolute z-10 text-white w-full h-full    items-center '>
       <div className=''>
   <div className='flex justify-between items-center px-4 mt-5'>
-      <div className="px-[5%] text-white  sm:gap-y-5 flex flex-col justify-center my-auto h-full">
+      <div className="px-[5%] text-white pt-6  sm:gap-y-5 flex flex-col justify-center my-auto h-full">
                 <Heading name="VoltEV/Power"  />
                 <SubHeading name="DC Fast Charging Stations"  />
                 <Description
