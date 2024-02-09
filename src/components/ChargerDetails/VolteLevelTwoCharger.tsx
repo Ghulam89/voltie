@@ -11,10 +11,10 @@ import Button from '../ui/Button/Button'
 
 const Volteleveltwocharger = () => {
   return (
-    <section className="relative h-full w-full">
-      <div className="h-[45rem] w-full">
+    <section className=" w-full">
+      <div className=" h-auto w-full">
         <div className="h-full w-full relative mx-auto">
-          <div className="absolute z-10 text-white w-full h-full sm:h-max ">
+          <div className=" pb-7 z-10 text-white w-full h-full sm:h-max ">
             <div className="px-[5%] sm:px-[15%] gap-y-56 w-full h-full flex justify-center items-center">
               <div className="  flex flex-col justify-center  items-center">
               <div className="flex flex-col items-center mb-32 ">
@@ -112,7 +112,7 @@ const Volteleveltwocharger = () => {
              </div>
             </div>
           </div>
-          <div className="absolute inset-0 bg-black"></div>
+          {/* <div className="absolute inset-0 bg-black"></div> */}
         </div>
       </div>
     </section>
