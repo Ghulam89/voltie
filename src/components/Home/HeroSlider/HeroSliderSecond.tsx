@@ -3,7 +3,7 @@ import React,{useEffect,useRef,useState} from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {blackbg, sliderImageFirst, sliderImageSecond, sliderImageThird, sliderImageFour, sliderImageFive, sliderImageSix, heroBgOne, heroBgTwo, heroBgThree, heroBgFour, heroBgFive, charger,productTwoImg,productThreeImg,productfourImg } from '@/assets/images';
+import {blackbg, sliderImageFirst, sliderImageSecond, productfourBg,sliderImageThird, sliderImageFour, sliderImageFive, sliderImageSix, heroBgOne, heroBgTwo, heroBgThree, heroBgFour, heroBgFive, charger,productTwoImg,productThreeImg,productfourImg } from '@/assets/images';
 import Image from 'next/image'
 import Heading from '../../ui/Heading/Heading';
 import SubHeading from '../../ui/SubHeading/SubHeading';
@@ -61,25 +61,27 @@ const HeroSliderData = [
   {
     type: 'image',
     // image:blackbg,
-    image:heroBgFour, //
-    heading:"Product 3 comming soon",
-    subHeading:"At Home. At Work. On the Go.",
-    chargerImage:productfourImg ,
+    image:productfourBg, 
+    heading:"",
+    subHeading:"",
+    chargerImage:"" ,
     link:"/",
     show:false,
     description:"Our Partner Plan gives Owners the opportunity to receive a larger percentage of the of the estimated monthly revenue while also benefiting from VoltiE’s Management Services.",
   },
-  {
-    type: 'image',
-    // image:blackbg,
-    image:heroBgFive,
-    heading:"Product 4 comming soon",
-    subHeading:"Operator Managed Service",
-    link:"/",
-    show:false,
-    chargerImage: productfourImg ,
-    description:"The Operator Managed Service gives a manager independent control over the entire EV Charging Platform. Larger Operators with multiple locations can leverage the total revenue potential from their EV Charging Network from day one.",
-  }]
+  // {
+  //   type: 'image',
+  //   // image:blackbg,
+  //   image:heroBgFive,
+  //   heading:"Product 4 comming soon",
+  //   subHeading:"Operator Managed Service",
+  //   link:"/",
+  //   show:false,
+  //   chargerImage: productfourImg ,
+  //   description:"The Operator Managed Service gives a manager independent control over the entire EV Charging Platform. Larger Operators with multiple locations can leverage the total revenue potential from their EV Charging Network from day one.",
+  // }
+
+]
 const HeroSliderSecond = () => {
   const { selectItem, selectedItem } = useSlider();
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);

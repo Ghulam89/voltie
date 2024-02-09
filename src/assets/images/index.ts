@@ -20,6 +20,7 @@ import voltieSolutionImagePlaceholder from './voltic-placeholder-image.png'
 import productTwoImg from './p3.png'
 import productThreeImg from './p4.png'
 import productfourImg from './p2.png'
+import productfourBg from './slide4.jpeg'
 import heroBgOne from './hero-bg-1.jpg'
 import heroBgTwo from './hero-bg-2.jpg'
 import heroBgThree from './hero-bg-3.jpg'
@@ -48,4 +49,4 @@ import appsection from './appsection.png'
 import blackbg from './blackbg.jpg'
 import dccharger from './dccharger.png'
 
-export {dccharger,blackbg,staytuned,productTwoImg , productThreeImg , productfourImg,productOneBgImage,manHoldingPhone,planA,planB,planC,planD,aboutUs,ourApproach,ourJourney,ourVision,ourMissio,iconOne,iconTwo,iconThree,sectionFiveBg,sectionFourGraphic,computerGraphic,charginNetworkIconFirst,charginNetworkIconSecond,charginNetworkIconThird,chargingNetworkIcons,voltieSmartPhone,sliderImageFirst,sliderImageSecond,sliderImageThird,sliderImageFour,sliderImageFive,sliderImageSix,detailsSectionImageFirst,detailsSectionImageSecond,whiteLogo,chargingCarImage,voltieImageOne,voltieSolutionImageOne,voltieSolutionImagePlaceholder,heroBgOne,heroBgTwo,heroBgThree,heroBgFour,heroBgFive,bgImageOne,charger,appsection}
+export {dccharger,blackbg,staytuned,productTwoImg , productThreeImg , productfourImg,productOneBgImage,manHoldingPhone,planA,planB,planC,planD,aboutUs,ourApproach,ourJourney,ourVision,ourMissio,iconOne,iconTwo,iconThree,sectionFiveBg,sectionFourGraphic,computerGraphic,charginNetworkIconFirst,charginNetworkIconSecond,charginNetworkIconThird,chargingNetworkIcons,voltieSmartPhone,sliderImageFirst,sliderImageSecond,sliderImageThird,sliderImageFour,sliderImageFive,sliderImageSix,detailsSectionImageFirst,detailsSectionImageSecond,whiteLogo,chargingCarImage,voltieImageOne,voltieSolutionImageOne,voltieSolutionImagePlaceholder,heroBgOne,heroBgTwo,heroBgThree,heroBgFour,heroBgFive,bgImageOne,charger,appsection,productfourBg}
